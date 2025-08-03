@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Spaces - Official Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Dark gray fallback */
+            background-image: url('https://images.unsplash.com/photo-1482824367498-448b3c3b27b4?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .backdrop-blur-sm {
+            -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body class="text-gray-200">
+
+    <!-- Header & Navigation -->
+    <header class="bg-black bg-opacity-50 backdrop-blur-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-black tracking-wider text-white text-shadow uppercase">Small Spaces</a>
+            <ul class="flex items-center space-x-6">
+                <li><a href="index.html" class="hover:text-red-500 transition-colors duration-300">Home</a></li>
+                <li><a href="music.html" class="hover:text-red-500 transition-colors duration-300">Music</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <!-- Hero Section -->
+        <section class="text-center my-20">
+            <h1 class="text-6xl md:text-8xl font-black text-white uppercase tracking-widest text-shadow">Small Spaces</h1>
+            <p class="text-lg md:text-xl mt-4 text-gray-300 font-light text-shadow">Hip-Hop | Pop | Rap</p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="bg-gray-900 bg-opacity-70 backdrop-blur-sm p-8 md:p-12 rounded-lg shadow-2xl my-20">
+            <h2 class="text-4xl font-bold text-white mb-6 border-b-2 border-red-500 pb-2">About The Band</h2>
+            <div class="space-y-4 text-gray-300 leading-relaxed">
+                <p>
+                    Emerging from the shadows, Small Spaces blends the raw energy of hip-hop with the infectious hooks of pop and the lyrical depth of rap. Their sound is a haunting journey through atmospheric beats and introspective storytelling. 
+                </p>
+                <p>
+                    The band was formed in the quiet corners of the city, finding a unique voice in the spaces between noise and silence. This duality is the core of their identity, creating music that is both intimate and immense, personal yet universal. Prepare to get lost in the soundscape.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black bg-opacity-70 text-center p-6 mt-20">
+        <p>&copy; 2025 Small Spaces Records. All Rights Reserved.</p>
+    </footer>
+
+    <script src="recordLable4.2.js"></script>
+</body>
+</html>

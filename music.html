@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music - Small Spaces</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Dark gray fallback */
+            background-image: url('https://images.unsplash.com/photo-1482824367498-448b3c3b27b4?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .backdrop-blur-sm {
+            -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+        }
+    </style>
+</head>
+<body class="text-gray-200">
+
+    <!-- Header & Navigation -->
+    <header class="bg-black bg-opacity-50 backdrop-blur-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-black tracking-wider text-white uppercase" style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);">Small Spaces</a>
+            <ul class="flex items-center space-x-6">
+                <li><a href="index.html" class="hover:text-red-500 transition-colors duration-300">Home</a></li>
+                <li><a href="music.html" class="hover:text-red-500 transition-colors duration-300">Music</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <h1 class="text-5xl font-black text-white text-center my-12 uppercase tracking-widest" style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);">Discography</h1>
+
+        <!-- Music Tracks Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Track 1 -->
+            <div class="bg-gray-900 bg-opacity-70 backdrop-blur-sm rounded-lg shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <img src="https://placehold.co/600x600/000000/ff0000?text=Cover+Art" alt="Album Cover" class="w-full h-auto">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-white">Track Title 1</h3>
+                    <p class="text-gray-400 mb-4">From the album "Echoes in the Static"</p>
+                    <audio controls class="w-full">
+                        <!-- Example: <source src="path/to/your/audio1.mp3" type="audio/mpeg"> -->
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <!-- Track 2 -->
+            <div class="bg-gray-900 bg-opacity-70 backdrop-blur-sm rounded-lg shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <img src="https://placehold.co/600x600/111111/cccccc?text=Cover+Art" alt="Album Cover" class="w-full h-auto">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-white">Track Title 2</h3>
+                    <p class="text-gray-400 mb-4">From the album "Echoes in the Static"</p>
+                    <audio controls class="w-full">
+                        <!-- Example: <source src="path/to/your/audio2.mp3" type="audio/mpeg"> -->
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <!-- Track 3 -->
+            <div class="bg-gray-900 bg-opacity-70 backdrop-blur-sm rounded-lg shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <img src="https://placehold.co/600x600/220000/ffffff?text=Cover+Art" alt="Album Cover" class="w-full h-auto">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-white">Track Title 3</h3>
+                    <p class="text-gray-400 mb-4">Single</p>
+                    <audio controls class="w-full">
+                        <!-- Example: <source src="path/to/your/audio3.mp3" type="audio/mpeg"> -->
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <!-- Add more tracks as needed -->
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black bg-opacity-70 text-center p-6 mt-20">
+        <p>&copy; 2025 Small Spaces Records. All Rights Reserved.</p>
+    </footer>
+
+    <script src="recordLable4.2.js"></script>
+</body>
+</html>
